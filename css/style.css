@@ -1,0 +1,454 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
+
+:root{
+    --black: #2b2a2c;
+    --grey: #6a696b;
+    --white: #fff;
+}
+
+*{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0; padding: 0;
+    border: none; outline: none;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.container{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.btn{
+    width: 200px;
+    font-size: 16px;
+    color: var(--grey);
+    cursor: pointer;
+    border: 1px solid var(--grey);
+    padding: 20px 0;
+    text-align: center;
+    border-radius: 50px;
+    background: none;
+    text-transform: uppercase;
+}
+
+.btn:hover{
+    background: var(--grey);
+    color: var(--white);
+}
+
+.heading{
+    font-size: 45px;
+    color: var(--black);
+    font-weight: bold;
+    text-align: center;
+    margin-top: 51px;
+    margin-bottom: 21px;
+}
+
+/* ............ header ......... */
+
+header .container .inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 18px;
+}
+
+header .container .inner .user{
+    display: flex;
+}
+
+header .container .inner .user img{
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+header .container .inner .user .content h3{
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--black);
+    margin-bottom: 8px;
+    text-transform: capitalize;
+}
+
+header .container .inner .user .content p{
+    font-size: 12px;
+    color: var(--grey);
+    text-transform: capitalize;
+}
+
+header .container .inner .navbar a{
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--black);
+    margin-left: 39px;
+}
+
+header .container .inner .navbar a:hover{
+    border-bottom: 3px solid var(--black);
+    padding-bottom: 5px;
+
+}
+
+
+/* ................... Intro .............. */
+
+.intro .container .inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    border-bottom:  1px solid #cecece;
+    padding-bottom: 12px;
+}
+
+.intro .container .inner .content h3{
+    font-size: 32px;
+    font-weight: 300;
+    color: var(--grey);
+    margin-bottom: 12px;
+    text-transform: capitalize;
+}
+
+.intro .container .inner .content h1{
+    font-size: 45px;
+    font-weight: bold;
+    color: var(--black);
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+
+.intro .container .inner .content p{
+    font-size: 18px;
+    color: var(--grey);
+    margin-bottom: 30px;
+    text-transform: capitalize;
+}
+
+.intro .container .inner .content .social{
+    margin-bottom: 42px;
+}
+
+.intro .container .inner .content .social a{
+    margin-right: 11px;
+}
+
+.intro .container .inner .content .social a img:hover{
+    transform: rotate(360deg);
+    transition: 2s;
+}
+
+
+/* ............ Work .......... */
+
+.work .container .inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.work .container .inner .box{
+    box-shadow:  0 0 4px var(--grey);
+    border-radius: 10px;
+}
+
+.work .container .inner .box:hover{
+    box-shadow: 0 0 20px var(--grey);
+    cursor: pointer;
+    transition: 1s;
+}
+
+.work .container .inner .box .content{
+    padding: 20px 15px;
+}
+
+.work .container .inner .box .content h4{
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--black);
+    padding-bottom: 16px;
+}
+
+.work .container .inner .box .content .shop{
+    display: flex;
+    justify-content: space-between;
+}
+
+.work .container .inner .box .content .shop p{
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--black);
+}
+
+/* .............. About .............. */
+
+.about .container .inner{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 112px;
+}
+
+
+.about .container .inner img{
+    margin-right: 121px;
+}
+
+.about .container .inner .content h3{
+    font-size:45px;
+    font-weight: bold;
+    color: var(--black);
+    margin-top: 79px;
+    
+}
+
+.about .container .inner .content h2{
+    font-size:92px;
+    font-weight: bold;
+    color: #dedede;
+}
+
+.about .container .inner .content p{
+    font-size: 12px;
+    line-height: 24px;
+    color: var(--grey);
+    font-weight: 300;
+    text-transform: capitalize;   
+    margin-bottom: 59px; 
+}
+
+
+/* ............. Reviews .......... */
+
+.reviews{
+    background: url(../images/reviews.png)  #332f30 no-repeat center;
+    background-size: cover;
+    margin-top: 113px;
+    padding-top: 43px;
+    padding-bottom: 72px;
+    /* background-image: url(../images/reviews.png);
+    background-color: #332f30; 
+    background-repeat: no-repeat;
+    background-position: center; */ 
+    position: relative;
+}
+
+.reviews .container .inner .content{
+    text-align: center;
+    color: var(--white);
+    max-width: 775px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.reviews .container .inner .content p{
+    font-size: 14px;
+    font-weight: 200;
+    line-height: 32px;
+    text-transform: capitalize;
+}
+
+.reviews .container .inner .author{
+    position: absolute;
+    left: calc(50% - 51.5px);
+    margin-top: 21px;
+    text-align: center;
+}
+
+.reviews .container .inner .author h4{
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--black);
+    text-transform: capitalize;
+    padding-top: 13px;
+    padding-bottom: 7px;
+}
+
+.reviews .container .inner .author p{
+    font-size: 14px;
+    color: #717072;
+    font-style: italic;
+    margin-bottom: 12px;
+    text-transform: capitalize;
+}
+
+.reviews .container .inner .author .unactive{
+    opacity: .6;
+}
+
+/* ............... Courses ........... */
+
+.courses{
+    margin-top: 235px;
+}
+
+.courses .container .text{
+    font-size: 18px;
+    color: var(--grey);
+    margin-top: 19px;
+    margin-bottom: 60px;
+    font-weight: 300;
+    text-align: center;
+    text-transform: none;
+}
+
+.courses .container .inner{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.courses .container .inner .box .content h3{
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--black);
+    margin-bottom: 16px;
+    margin-top: 26px;
+}
+
+.courses .container .inner .box .content h4{
+    font-size: 12px;
+    color: var(--black);
+    margin-bottom: 29px;
+    font-weight: 400;
+}
+
+.courses .container .inner .box .content p{
+    font-size: 12px;
+    font-weight: 300;
+    color: #717072;
+    text-transform: none;
+    margin-bottom: 38px;
+    line-height: 24px;
+}
+
+.courses .container .inner .box .content .btn{
+    font-size: 14px;
+    font-weight: bold;
+    padding: 12px;
+    width: 126px;
+}
+
+.courses .container .link{
+    text-align: right;
+    margin-top: 19px;
+}
+
+.courses .container .link a{
+    font-size: 14px;
+    color: var(--grey);
+   text-transform: none;
+   text-decoration: underline;
+}
+
+/* ........... Footer ......... */
+
+footer{
+    background: var(--black);
+    margin-top: 125px;
+}
+
+footer .container .inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+footer .container .inner .info{
+    display: flex;
+    align-items: center;
+}
+
+footer .container .inner .info .copyright p{
+    font-size: 14px;
+    color: #8d8d8e;
+    text-transform: capitalize;
+    border-right: 1px solid #413f41;
+    padding-right: 23px;
+    margin-right: 17px;
+}
+
+footer .container .inner .info .social a{
+    margin-right: 18px;
+}
+
+footer .container .inner .navbar a{
+    font-size: 14px;
+    color: #8d8d8e;
+    margin-left: 18px;
+    text-transform: capitalize;
+}
+
+@media(max-width: 1200px){
+    .container{
+        padding: 0 3%;
+    }
+
+    .intro .container .inner .dominik{
+        width: 550px;
+        height: 380px;
+    }
+
+    .work .container .inner .box{
+        width: 30%;
+    }
+
+    .work .container .inner .box img{
+        width: 100%;
+    }
+
+    .courses .container .inner{
+        flex-wrap: wrap;
+    }
+
+    .courses .container .inner .box{
+        width: 30%;
+    }
+
+    .courses .container .inner .box img{
+        width: 100%;
+    }
+}
+
+@media(max-width: 976px){
+    .intro .container .inner .dominik{
+        display: none;
+    }
+
+    .intro .container .inner .content{
+        margin-top: 20px;
+    }
+
+    .about .container .inner img{
+        display: none;
+    }
+}
+
+@media(max-width: 767px){
+    header .container .inner .user .content{
+        display: none;
+    }
+
+    .work .container .inner .box{
+        width: 80%;
+        margin: 10px auto;
+    }
+
+    .courses .container .inner .box{
+        width: 80%;
+        margin: 10px auto;
+    }
+
+    footer .container .inner{
+        justify-content: center;
+    }
+
+    footer .container .inner .navbar{
+        display: none;
+    }
+}
+
